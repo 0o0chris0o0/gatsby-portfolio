@@ -3,10 +3,15 @@ import PropTypes from 'prop-types';
 
 import '../styles/style.css';
 
+import SideBar from './Sidebar';
+
 function Layout({ children }) {
   return (
-    <main className="relative z-10 flex flex-col h-screen items-center justify-center">
-      {children}
+    <main className="relative z-10 flex min-h-screen bg-offWhite">
+      <div className="w-1/3 p-10">
+        <SideBar />
+      </div>
+      <div className="w-2/3">{children}</div>
     </main>
   );
 }

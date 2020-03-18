@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: { sans: ['Lato', 'sans-serif'] },
-    extend: { colors: {} }
+    extend: { colors: { offWhite: '#f4f4f4' } }
   },
   variants: {},
   plugins: []
