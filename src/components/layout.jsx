@@ -7,11 +7,11 @@ import SideBar from './Sidebar';
 
 function Layout({ children }) {
   return (
-    <main className="relative z-10 flex min-h-screen bg-offWhite">
-      <div className="w-1/3 p-10">
+    <main className="relative z-10 flex flex-col md:flex-row min-h-screen bg-offWhite">
+      <div className="w-full md:w-1/3 p-8 md:p-10">
         <SideBar />
       </div>
-      <div className="w-2/3">{children}</div>
+      <div className="w-full md:w-2/3">{children}</div>
     </main>
   );
 }

@@ -14,8 +14,8 @@ export default function Index({ data }) {
   const cms = data.allDatoCmsWork.nodes;
   return (
     <Layout>
-      <div className="my-auto text-center font-light p-10">
-        <div className="grid grid-cols-3 gap-4">
+      <div className="my-auto text-center font-light p-8 md:p-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {cms.map(item => (
             <div key={item.slug}>
               <div className="shadow-md hover:shadow-none transform hover:translate-y-1 transition duration-500">

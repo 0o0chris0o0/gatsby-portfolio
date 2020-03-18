@@ -33,19 +33,19 @@ export default function Sidebar() {
     {
       id: 1,
       alt: 'Linked In',
-      link: 'https://www.linkedin.com',
+      link: 'https://www.linkedin.com/in/cmart91',
       img: LinkedIcon
     },
     {
       id: 2,
       alt: 'Github',
-      link: 'https://www.linkedin.com',
+      link: 'https://github.com/0o0chris0o0',
       img: GithubIcon
     },
     {
       id: 3,
       alt: 'Email',
-      link: 'https://www.linkedin.com',
+      link: 'mailto:chrismartin5691@gmail.com',
       img: EmailIcon
     }
   ];
@@ -57,10 +57,10 @@ export default function Sidebar() {
         className="text-gray-600 font-light"
         dangerouslySetInnerHTML={{ __html: cms.introNode.childMarkdownRemark.html }}
       />
-      <Navigation />
-      <ul className="flex items-center -ml-1">
+      {/* <Navigation /> */}
+      <ul className="flex items-center -ml-1 mt-5">
         {Icons.map(({ id, alt, link, img }) => (
-          <a key={id} href={link}>
+          <a key={id} href={link} target="_blank" rel="noopener noreferrer">
             <li className="rounded-full border border-solid border-gray-500 p-3 mx-1">
               <img src={img} className="w-5 h-5" alt={alt} />
             </li>
